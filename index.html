@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="admin-name">
+            <i class='bx bx-user'></i>
+            <h1>Admin List</h1>
+        </div>
+
+        <div class="back"></div>
+
+        <div class="add-list">
+
+            <div class="list-text">
+                <h1>Employment</h1>
+                <i class='bx bx-x' ></i>
+            </div>
+
+            <div class="list">
+                <input type="text" placeholder="Full name" class="name">
+                <input type="email" placeholder="Email" class="email">
+                <input type="number" placeholder="5555555" class="phone-number">
+                <select>
+                    <option value=""></option>
+                    <option value="samarqand">Samarqand</option>
+                    <option value="toshkent">Toshkent</option>
+                    <option value="andijon">Andijon</option>
+                    <option value="namangan">Namangan</option>
+                    <option value="xorazm">Xorazm</option>
+                    <option value="termiz">Termiz</option>
+                </select>
+                <div class="genders">
+                    <label for="man">Man</label>
+                    <input type="radio" value="man" name="gender" id="man">
+                    
+                    <label for="woman">Woman</label>
+                    <input type="radio" value="woman" name="gender" id="woman">
+                </div>
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="admin-list">
+
+            <div class="search">
+                <div class="search-input">
+                    <input type="text" placeholder="Search">
+                    <i class='bx bx-search'></i>
+                </div>
+                <button class="add-admin-list">+ Add New</button>
+            </div>
+
+            <div class="panel">
+                <div class="admin-panel">
+                    <h3 id="name">Employee Name</h3>
+                    <h3 id="email">Email Address (Personal)</h3>
+                    <h3 id="number">Mobile Number</h3>
+                    <h3 id="city">City</h3>
+                    <h3>Gender</h3>
+                    <h3>Action</h3>
+                </div>
+                <div class="todo">
+                    <!-- <ul>
+                        <input type="text" value="Shamsi" readonly>
+                        <input type="email" value="shamsi@mail.uz" readonly>
+                        <input type="text" value="555-55-55" readonly>
+                        <input type="text" value="Samarqand" readonly>
+                        <input type="text" value="Man" readonly>
+                        <li>
+                            <i class='bx bxs-pencil'></i>
+                            <i class='bx bx-x'></i>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
